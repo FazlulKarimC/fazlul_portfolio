@@ -1,0 +1,123 @@
+export const personalData = {
+  name: "Fazlul Karim Choudhury",
+  title: "Full Stack Developer",
+  bio: "Passionate developer with expertise in building modern web applications. I love creating clean, efficient, and user-friendly solutions that solve real-world problems.",
+  email: "fazlul0127@gmail.com",
+  location: "Bengaluru, India",
+  socials: {
+    github: "https://github.com/FazlulKarimC",
+    linkedin: "https://www.linkedin.com/in/fazlul0127/",
+    twitter: "https://x.com/FazlulKarim_fk",
+  },
+}
+
+export const skills = [
+  { name: "JavaScript", color: "secondary" },
+  { name: "TypeScript", color: "accent" },
+  { name: "React", color: "primary" },
+  { name: "Next.js", color: "secondary" },
+  { name: "Node.js", color: "accent" },
+  { name: "Python", color: "primary" },
+  { name: "Java", color: "secondary" },
+  { name: "C/C++", color: "accent" },
+  { name: "HTML/CSS", color: "primary" },
+  { name: "PostgreSQL", color: "secondary" },
+  { name: "MongoDB", color: "accent" },
+  { name: "Tailwind CSS", color: "primary" },
+  { name: "Git", color: "secondary" },
+  { name: "Docker", color: "accent" },
+  { name: "AWS", color: "primary" },
+  { name: "Machine Learning", color: "secondary" },
+  { name: "Neural Network", color: "accent" },
+]
+
+export const experiences = [
+  {
+    company: "Freelance",
+    position: "Full Stack Developer",
+    duration: "2024 - Present",
+    description: "Started career building responsive websites and learning modern development practices.",
+  },
+  {
+    company: "Automatic Data Processing",
+    position: "Member Technical",
+    duration: "2023 - 2024",
+    description: `Built an employee management system with Agile teams using ReactJS, TypeScript, JavaScript (front-end) and Spring Boot, Spring Security, JPA (back-end).
+Delivered responsive UI and secure APIs, cutting manual HR tasks by 40% and improving efficiency by 35% for 5,000 users.`,
+  },
+]
+
+export const education = [
+  {
+    institution: "North-Eastern Hill University",
+    degree: "Bachelor of Technology in Computer Science",
+    duration: "2019 - 2023",
+  },
+]
+
+export const projects = [
+  {
+    title: "PaperSightAI",
+    description: `PaperSight AI is a Next.js web app that uses Google’s Gemini AI to instantly summarize uploaded PDFs, helping researchers, students, and professionals quickly extract key insights from long documents.`,
+    tech: ["Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "NeonDB",
+        "Langchain",
+        "Clerk",
+        "TailwindCSS",
+        "Shadcn",
+        "Node.js",
+        "Gemini AI"],
+    github: "https://github.com/FazlulKarimC/PaperSight_AI",
+    live: "https://papersight.vercel.app",
+    image: "/ps_home_page.png",
+  },
+  {
+    title: "Sleek",
+    description: `Sleek full-stack ecommerce app with Next.js frontend, Node.js/Express backend, and PostgreSQL database powered by Prisma ORM — delivering a fast, modern shopping experience.`,
+    tech: ["Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "NeonDB",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn",
+        "Express.js",
+        "Node.js"],
+    github: "https://github.com/FazlulKarimC/eCommerce_app",
+    live: "https://e-commerce-app-fazlul.vercel.app/",
+    image: "/sleek.png",
+  },
+  {
+    title: "QuickPay",
+    description: "PayTM-like full-stack payment app with secure auth, transactions, and bank linking. Built with Next.js + TypeScript frontend (10% faster loads) and Express + PostgreSQL + Prisma backend with webhooks; optimized via Docker & Turborepo (20% faster builds, 15% quicker deploys).",
+    tech: ["Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "WebHooks",
+        "NextAuth.js",
+        "Node.js"],
+    github: "https://github.com/FazlulKarimC/QuickPay",
+    live: "https://github.com/FazlulKarimC/QuickPay",
+    image: "/Quickpay.png",
+  },
+  {
+    title: "Psychiatric Diagnosis",
+    description: "Built ML models (Logistic Regression, Decision Tree, Random Forest, SVM) to predict psychiatric disorders using Scikit-learn, achieving 93% accuracy via feature engineering and statistical analysis. Handled preprocessing with Pandas/NumPy, visualized results with Matplotlib, and managed workflow with Jupyter and Git.",
+    tech: ["Python",
+        "Machine Learning",
+        "Scikit-learn",
+        "Matplotlib",
+        "NumPy",
+        "Pandas",
+        "Jupyter",
+        "Git",
+        "Streamlit"],
+    github: "https://github.com/FazlulKarimC/Detection-of-Psychiatric-Disorder-using-ML",
+    live: "https://github.com/FazlulKarimC/Detection-of-Psychiatric-Disorder-using-ML",
+    image: "/pdd.png",
+  },
+]
