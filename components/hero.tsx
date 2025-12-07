@@ -21,7 +21,7 @@ export function Hero() {
           Hi, I'm{" "}
           <span className="relative inline-block">
             <span className="relative z-10">{personalData.name}</span>
-            <span className="absolute bottom-2 left-0 w-full h-4 bg-secondary rounded-sm z-0" />
+            <span className="absolute -bottom-1 left-0 w-full h-3 bg-secondary rounded-sm -z-10" />
           </span>
         </h1>
 

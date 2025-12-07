@@ -36,7 +36,7 @@ export const experiences = [
     company: "Freelance",
     position: "Full Stack Developer",
     duration: "2024 - Present",
-    description: "Started career building responsive websites and learning modern development practices.",
+    description: "Turning ideas into clean, production-ready code, available for freelance projects and long-term collaborations.",
   },
   {
     company: "Automatic Data Processing",
