@@ -26,7 +26,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b-3 border-border">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="text-2xl font-bold font-mono tracking-tight hover:text-primary transition-colors">
-          FH<span className="text-primary">.</span>
+          FK<span className="text-primary">.</span>
         </a>
 
         {/* Desktop nav */}
