@@ -2,7 +2,7 @@
 
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "./theme-provider"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -15,6 +15,12 @@ const navLinks = [
 export function Navbar() {
   const { theme, toggleTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  // Prevent hydration mismatch by only rendering theme-specific content after mount
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b-3 border-border">
@@ -39,7 +45,7 @@ export function Navbar() {
             className="ml-2 p-2 border-3 border-border bg-card rounded-xl shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all"
             aria-label="Toggle theme"
           >
-            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            {mounted && (theme === "light" ? <Moon size={20} /> : <Sun size={20} />)}
           </button>
         </div>
 
@@ -50,7 +56,7 @@ export function Navbar() {
             className="p-2 border-3 border-border bg-card rounded-xl shadow-xs"
             aria-label="Toggle theme"
           >
-            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+            {mounted && (theme === "light" ? <Moon size={20} /> : <Sun size={20} />)}
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
