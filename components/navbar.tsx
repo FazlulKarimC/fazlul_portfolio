@@ -70,7 +70,7 @@ export function Navbar() {
 
       {/* Mobile nav */}
       {isOpen && (
-        <div className="md:hidden border-t-3 border-border bg-background rounded-b-2xl">
+        <div className="md:hidden border-t-3 border-border bg-background rounded-b-2xl animate-in slide-in-from-top-5 fade-in duration-300">
           {navLinks.map((link) => (
             <a
               key={link.href}

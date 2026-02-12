@@ -1,27 +1,43 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
-import { DM_Sans, Space_Mono, DM_Sans as V0_Font_DM_Sans, Space_Mono as V0_Font_Space_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
-
-// Initialize fonts
-const _dmSans = V0_Font_DM_Sans({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900", "1000"] })
-const _spaceMono = V0_Font_Space_Mono({ subsets: ['latin'], weight: ["400", "700"] })
-const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
-
-const dmSans = DM_Sans({ subsets: ["latin"] })
-const spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Fazlul Karim | Full Stack Developer",
   description:
     "Portfolio of Fazlul Karim - Full Stack Developer specializing in modern web applications with React, Next.js, and Node.js",
+  keywords: [
+    "Fazlul Karim",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Web Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Fazlul Karim Choudhury" }],
+  openGraph: {
+    title: "Fazlul Karim | Full Stack Developer",
+    description:
+      "Portfolio of Fazlul Karim - Full Stack Developer specializing in modern web applications with React, Next.js, and Node.js",
+    type: "website",
+    locale: "en_US",
+    siteName: "Fazlul Karim Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fazlul Karim | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, Next.js, and Node.js",
+    creator: "@FazlulKarim_fk",
+  },
 }
 
-export const viewport = {
+export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#000000" },

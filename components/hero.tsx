@@ -1,5 +1,6 @@
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Twitter, FileText } from "lucide-react"
 import { personalData } from "@/lib/data"
+import Image from "next/image"
 
 export function Hero() {
   return (
@@ -7,8 +8,14 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile image - Added rounded-2xl */}
         <div className="relative inline-block mb-8">
-          <div className="mt-10 w-40 h-40 md:w-48 md:h-48 border-4 border-border shadow-lg bg-secondary rounded-2xl overflow-hidden">
-            <img src="/me.jpeg" alt={personalData.name} className="w-full h-full object-cover" />
+          <div className="mt-10 w-40 h-40 md:w-48 md:h-48 border-4 border-border shadow-lg bg-secondary rounded-2xl overflow-hidden relative">
+            <Image
+              src="/me.jpeg"
+              alt={personalData.name}
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
           {/* Decorative element - Added rounded-xl */}
           <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary border-3 border-border rounded-xl flex items-center justify-center text-2xl">
@@ -69,10 +76,19 @@ export function Hero() {
             View My Work
           </a>
           <a
-            href="#contact"
-            className="px-8 py-3 bg-card font-bold border-3 border-border rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:bg-secondary hover:text-secondary-foreground transition-all"
+            href="/v1_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-card font-bold border-3 border-border rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:bg-secondary hover:text-secondary-foreground transition-all flex items-center gap-2"
           >
-            Get In Touch
+            <FileText size={20} />
+            Resume
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-3 bg-card font-bold border-3 border-border rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:bg-accent hover:text-accent-foreground transition-all"
+          >
+            Contact Me
           </a>
         </div>
 

@@ -21,10 +21,8 @@ export function Skills() {
           {skills.map((skill, index) => (
             <span
               key={skill.name}
-              className={`px-5 py-2 font-bold border-3 border-border rounded-xl shadow-xs hover:shadow-md hover:-translate-y-1 transition-all cursor-default ${
-                colorClasses[skill.color as keyof typeof colorClasses]
-              }`}
-              style={{ animationDelay: `${index * 50}ms` }}
+              className={`px-5 py-2 font-bold border-3 border-border rounded-xl shadow-xs hover:shadow-md hover:-translate-y-1 transition-all cursor-default ${colorClasses[skill.color as keyof typeof colorClasses]
+                }`}
             >
               {skill.name}
             </span>

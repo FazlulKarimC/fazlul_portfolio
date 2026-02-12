@@ -25,7 +25,7 @@ export function Experience() {
             <div className="space-y-6">
               {experiences.map((exp, index) => (
                 <div
-                  key={index}
+                  key={exp.company}
                   className="bg-card border-3 border-border rounded-2xl shadow-md p-5 hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
                   <div className="flex items-start justify-between gap-4 mb-2">
@@ -53,7 +53,7 @@ export function Experience() {
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <div
-                  key={index}
+                  key={edu.institution}
                   className="bg-card border-3 border-border rounded-2xl shadow-md p-5 hover:shadow-lg hover:-translate-y-1 transition-all"
                 >
                   <div className="flex items-start justify-between gap-4 mb-2">

@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react"
 import { projects } from "@/lib/data"
+import Image from "next/image"
 
 export function Projects() {
   return (
@@ -15,15 +16,16 @@ export function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <article
-              key={index}
+              key={project.title}
               className="bg-card border-3 border-border rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-2 transition-all group overflow-hidden"
             >
               {/* Project image - Added rounded corners to top */}
-              <div className="relative overflow-hidden border-b-3 border-border">
-                <img
+              <div className="relative overflow-hidden border-b-3 border-border h-48">
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors" />
               </div>
