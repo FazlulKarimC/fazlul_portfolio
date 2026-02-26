@@ -76,7 +76,7 @@ export function Hero() {
             View My Work
           </a>
           <a
-            href="/v1_resume.pdf"
+            href={personalData.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 bg-card font-bold border-3 border-border rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 hover:bg-secondary hover:text-secondary-foreground transition-all flex items-center gap-2"

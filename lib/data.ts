@@ -4,6 +4,7 @@ export const personalData = {
   bio: "Passionate developer with expertise in building modern web applications. I love creating clean, efficient, and user-friendly solutions that solve real-world problems.",
   email: "fazlul0127@gmail.com",
   location: "Bengaluru, India",
+  resume: "/v1_resume.pdf",
   socials: {
     github: "https://github.com/FazlulKarimC",
     linkedin: "https://www.linkedin.com/in/fazlul0127/",
@@ -18,6 +19,9 @@ export const skills = [
   { name: "Next.js", color: "secondary" },
   { name: "Node.js", color: "accent" },
   { name: "Python", color: "primary" },
+  { name: "FastAPI", color: "secondary" },
+  { name: "Langchain", color: "accent" },
+  { name: "Huggingface", color: "primary" },
   { name: "Java", color: "secondary" },
   { name: "C/C++", color: "accent" },
   { name: "HTML/CSS", color: "primary" },
@@ -56,6 +60,26 @@ export const education = [
 ]
 
 export const projects = [
+  {
+    title: "LLMForge",
+    description: `A config-driven experimentation platform for systematically comparing LLM reasoning strategies — Naive Prompting, Chain-of-Thought, RAG, and ReAct Agents — with full metrics tracking, a research-grade dashboard, and support for both HuggingFace and Custom Hosted OpenAI-compatible models.`,
+    tech: ["Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "VectorDB",
+        "Langchain",
+        "Redis",
+        "HuggingFace",
+        "RAG",
+        "ReAct Agents",
+        "Chain-of-Thought",
+        "Naive Prompting",
+        "openai api",
+        "ollama"],
+    github: "https://github.com/FazlulKarimC/LLM_Forge",
+    live: "https://llmforge.vercel.app",
+    image: "/LlmForge.png",
+  },
   {
     title: "PaperSightAI",
     description: `PaperSight AI is a Next.js web app that uses Google’s Gemini AI to instantly summarize uploaded PDFs, helping researchers, students, and professionals quickly extract key insights from long documents.`,
