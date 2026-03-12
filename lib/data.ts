@@ -1,10 +1,10 @@
 export const personalData = {
   name: "Fazlul Karim Choudhury",
-  title: "Full Stack Developer",
+  title: "AI Full Stack Developer",
   bio: "Passionate developer with expertise in building modern web applications. I love creating clean, efficient, and user-friendly solutions that solve real-world problems.",
   email: "fazlul0127@gmail.com",
   location: "Bengaluru, India",
-  resume: "/v1_resume.pdf",
+  resume: "/v2_resume.pdf",
   socials: {
     github: "https://github.com/FazlulKarimC",
     linkedin: "https://www.linkedin.com/in/fazlul0127/",
@@ -78,7 +78,7 @@ export const projects = [
         "ollama"],
     github: "https://github.com/FazlulKarimC/LLM_Forge",
     live: "https://llmforge.vercel.app",
-    image: "/LlmForge.png",
+    image: "/llmforge.png",
   },
   {
     title: "PaperSightAI",
@@ -95,7 +95,7 @@ export const projects = [
         "Gemini AI"],
     github: "https://github.com/FazlulKarimC/PaperSight_AI",
     live: "https://papersight.vercel.app",
-    image: "/ps_home_page.png",
+    image: "/papersight.png",
   },
   {
     title: "BRUTAL",
